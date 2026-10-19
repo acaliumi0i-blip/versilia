@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f7fcff">
+<meta name="color-scheme" content="light">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="Versilia Summer Events — mare, nightlife, tavoli VIP ed esperienze esclusive in Versilia.">
+<title>Versilia Summer Events — Discover the blue side</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--white:#fafdff;--paper:#f2faff;--ink:#09253b;--muted:#60788a;--line:rgba(9,37,59,.13);--tiffany:#75e0d0;--aqua:#a9f0e7;--sky:#7acdf7;--blue:#3b9ee8;--deep:#1763a6;--navy:#082c4d;--sans:'Manrope',Arial,sans-serif;--serif:'Playfair Display',Georgia,serif;--mono:'DM Mono',monospace}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:95px}body{margin:0;background:var(--white);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;cursor:pointer}.wrap{width:min(1240px,calc(100% - 56px));margin:auto}.eyebrow{font:10px var(--mono);text-transform:uppercase;letter-spacing:.17em;color:var(--deep)}.topline{height:31px;background:var(--navy);color:white;display:flex;align-items:center;justify-content:center;font:9px var(--mono);letter-spacing:.15em;text-transform:uppercase}.header{position:sticky;top:0;z-index:50;background:rgba(250,253,255,.9);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.navrow{height:78px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:10px;min-width:210px}.brandmark{width:39px;height:39px;border-radius:13px;background:linear-gradient(140deg,var(--tiffany),var(--sky),var(--deep));display:grid;place-items:center;color:white;font:italic 23px var(--serif);box-shadow:0 7px 18px #3b9ee82b}.brandtext{font-size:10px;line-height:1.35;letter-spacing:.14em;font-weight:800}.brandtext span{display:block;color:var(--deep);font-size:8px;letter-spacing:.23em;margin-top:3px}.nav{display:flex;align-items:center;gap:24px}.nav a{font-size:11px;font-weight:700;color:#38566d;position:relative;padding:9px 0}.nav a:after{content:"";position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--tiffany);transition:width .25s}.nav a:hover:after,.nav a.active:after{width:100%}.nav-actions{display:flex;align-items:center;gap:9px}.lang{border:1px solid var(--line);background:white;padding:10px 11px;border-radius:30px;font:10px var(--mono)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:13px;background:var(--deep);color:white;padding:13px 17px;border-radius:40px;font-size:11px;font-weight:800;box-shadow:0 8px 20px #1763a61c;transition:transform .25s,box-shadow .25s,background .25s}.nav-cta:hover,.btn:hover{transform:translateY(-3px);background:var(--navy);box-shadow:0 12px 26px #1763a630}.menu-btn{display:none;border:1px solid var(--line);background:white;border-radius:30px;padding:10px 12px}
+.hero{padding:54px 0 58px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 70% 35%,#dffaf7 0,transparent 30%),radial-gradient(ellipse at 85% 70%,#e0f3ff 0,transparent 34%),var(--white)}.hero:before{content:"";position:absolute;right:-180px;top:-210px;width:580px;height:580px;border:1px solid #7acdf733;border-radius:50%;box-shadow:0 0 0 45px #7acdf70b,0 0 0 95px #7acdf708;pointer-events:none}.hero-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:40px;align-items:center;position:relative}.hero-copy{padding:35px 0 45px}.eyebrow-pill{display:inline-flex;align-items:center;gap:9px;border:1px solid #75e0d080;background:#effdfa;border-radius:40px;padding:10px 14px;margin-bottom:27px}.pulse{width:7px;height:7px;background:#28bfa9;border-radius:50%;box-shadow:0 0 0 5px #75e0d02f}.hero h1{font:800 clamp(52px,6.3vw,88px)/.99 var(--sans);letter-spacing:-.075em;margin:0 0 23px;max-width:620px}.hero h1 .gradient{background:linear-gradient(100deg,#28b9ae 0%,#48b9ed 45%,#246cb4 90%);-webkit-background-clip:text;background-clip:text;color:transparent}.hero-desc{font-size:14px;line-height:1.9;color:var(--muted);max-width:450px;margin:0 0 29px}.hero-buttons{display:flex;align-items:center;gap:18px;flex-wrap:wrap}.btn-light{display:inline-flex;align-items:center;gap:10px;border-bottom:1px solid #82a5bb;padding:12px 0;font-size:11px;font-weight:800}.hero-proof{display:flex;align-items:center;gap:12px;margin-top:43px;font-size:10px;color:var(--muted)}.proof-dots{display:flex}.proof-dots i{width:25px;height:25px;border-radius:50%;border:2px solid white;margin-left:-6px;background:linear-gradient(140deg,var(--tiffany),var(--blue))}.proof-dots i:first-child{margin-left:0;background:linear-gradient(140deg,#baf8eb,#4ab7e6)}.proof-dots i:nth-child(2){background:linear-gradient(140deg,#9de8ff,#418ed0)}.proof-dots i:nth-child(3){background:linear-gradient(140deg,#d5f8f3,#2267a7)}.hero-visual{height:590px;position:relative;min-width:0}.hero-main-photo{position:absolute;inset:12px 9% 35px 6%;border-radius:44% 44% 24px 24px;overflow:hidden;background:#a5d9ed;box-shadow:0 30px 70px #0a54851c}.hero-main-photo img{width:100%;height:100%;object-fit:cover;filter:saturate(.86);animation:zoomIn 1.2s both}.hero-main-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(4,43,76,.42))}.visual-chip{position:absolute;z-index:2;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border:1px solid white;border-radius:16px;padding:13px 16px;box-shadow:0 15px 40px #082c4d18}.visual-chip strong{display:block;font-size:11px}.visual-chip small{display:block;color:var(--muted);font-size:9px;margin-top:4px}.chip-icon{width:34px;height:34px;border-radius:11px;background:#e1fbf5;color:#1d9e99;display:grid;place-items:center;font-size:17px}.chip-top{right:0;top:65px}.chip-bottom{left:0;bottom:70px}.hero-photo-label{position:absolute;z-index:2;left:15%;bottom:65px;color:white;font:10px var(--mono);letter-spacing:.14em;text-transform:uppercase}.orbit{position:absolute;z-index:1;right:2%;bottom:18px;width:116px;height:116px;border:1px solid #3b9ee86b;border-radius:50%;display:grid;place-items:center;background:var(--white);color:var(--deep);font:10px/1.6 var(--mono);text-align:center;transform:rotate(10deg)}.hero-scroll{position:absolute;right:0;bottom:12px;writing-mode:vertical-rl;font:9px var(--mono);letter-spacing:.16em;color:#6d8da2}
+.trustbar{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#f6fcff}.trust-inner{display:grid;grid-template-columns:repeat(4,1fr)}.trust-item{padding:22px 15px;display:flex;align-items:center;justify-content:center;gap:11px;border-right:1px solid var(--line);font-size:10px;font-weight:800;color:#36566d}.trust-item:last-child{border:0}.trust-icon{color:#28b9ae;font-size:17px}
+.page-section{padding:105px 0}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:43px}.section-heading h2{font-size:clamp(36px,4.5vw,59px);letter-spacing:-.065em;line-height:1.05;margin:14px 0 0;font-weight:800}.section-heading h2 em{font-family:var(--serif);font-weight:500;color:var(--deep)}.section-heading p{font-size:12px;line-height:1.9;color:var(--muted);max-width:350px;margin:0 0 3px}
+.services{background:linear-gradient(180deg,#f4fbff,#fff 90%)}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service-card{background:white;border:1px solid #dcecf4;border-radius:20px;min-height:245px;padding:24px;display:flex;flex-direction:column;position:relative;overflow:hidden;transition:transform .3s,box-shadow .3s,border-color .3s}.service-card:before{content:"";position:absolute;width:190px;height:190px;border-radius:50%;background:radial-gradient(circle,#baf5ed8c,transparent 70%);right:-80px;top:-90px;transition:transform .5s}.service-card:hover{transform:translateY(-7px);border-color:#9ce5dc;box-shadow:0 18px 45px #155d8110}.service-card:hover:before{transform:scale(1.5)}.service-top{display:flex;align-items:center;justify-content:space-between;position:relative}.service-num{font:10px var(--mono);color:#7c9aab}.service-icon{width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,#e5fcf6,#e5f4ff);display:grid;place-items:center;font-size:20px;color:var(--deep)}.service-card h3{font-size:20px;letter-spacing:-.04em;margin:auto 0 10px;position:relative}.service-card p{font-size:11px;line-height:1.8;color:var(--muted);margin:0;position:relative;max-width:310px}.service-more{position:absolute;right:23px;bottom:22px;color:var(--deep);font-size:18px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}.about-image{height:550px;position:relative}.about-image img{width:100%;height:100%;object-fit:cover;border-radius:24px;filter:saturate(.83)}.about-image:after{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid #75e0d0;border-radius:24px;z-index:-1}.image-caption{position:absolute;left:20px;bottom:20px;padding:12px 15px;border-radius:12px;background:#fffE;color:var(--ink);font:9px var(--mono);letter-spacing:.1em}.about-copy h2{font-size:clamp(40px,5vw,64px);line-height:1.03;letter-spacing:-.07em;margin:17px 0 22px}.about-copy h2 em{font-family:var(--serif);color:var(--deep);font-weight:500}.about-copy p{font-size:13px;line-height:1.95;color:var(--muted);margin:0 0 17px}.feature-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:27px 0 30px}.feature{display:flex;gap:9px;font-size:11px;font-weight:800;align-items:center}.check{width:22px;height:22px;border-radius:50%;background:#e2faf4;color:#169e92;display:grid;place-items:center;font-size:12px;flex:none}
+.gallery-section{background:var(--navy);color:white;position:relative;overflow:hidden}.gallery-section:before{content:"";position:absolute;right:-200px;top:-200px;width:600px;height:600px;border:1px solid #8ce6e02b;border-radius:50%;box-shadow:0 0 0 60px #8ce6e009,0 0 0 120px #8ce6e006}.gallery-section .eyebrow{color:var(--tiffany)}.gallery-section .section-heading p{color:#b1c7d6}.gallery-section .section-heading h2 em{color:var(--tiffany)}.gallery-grid{display:grid;grid-template-columns:1.1fr .85fr 1fr;gap:15px;align-items:start;position:relative}.gallery-card{overflow:hidden;border-radius:18px;background:#164569}.gallery-card:nth-child(2){margin-top:60px}.gallery-card:nth-child(3){margin-top:25px}.gallery-card img{width:100%;height:360px;object-fit:cover;display:block;opacity:.9;transition:transform .65s,opacity .3s}.gallery-card:nth-child(2) img{height:310px}.gallery-card:hover img{transform:scale(1.05);opacity:1}.gallery-meta{display:flex;justify-content:space-between;gap:10px;padding:16px 17px;font-size:10px;font-weight:700}.gallery-meta span:last-child{color:var(--tiffany);font:10px var(--mono)}
+.steps{background:linear-gradient(120deg,#eafaf7,#eef8ff 55%,#fafdff)}.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.step{border-top:1px solid #a9c7d6;padding:22px 15px 10px 0}.step-number{font:11px var(--mono);color:var(--deep)}.step h3{font-size:19px;letter-spacing:-.04em;margin:26px 0 10px}.step p{font-size:12px;line-height:1.8;color:var(--muted);margin:0;max-width:300px}
+.contact-section{padding:100px 0;background:white}.contact-panel{position:relative;overflow:hidden;background:linear-gradient(115deg,#dffbf4,#e3f5ff 52%,#cbe7ff);border-radius:30px;padding:65px 7%;display:flex;justify-content:space-between;align-items:center;gap:35px}.contact-panel:after{content:"";position:absolute;right:-100px;top:-180px;width:400px;height:400px;border:1px solid #ffffffb8;border-radius:50%;box-shadow:0 0 0 35px #ffffff30,0 0 0 70px #ffffff25}.contact-panel>*{position:relative;z-index:1}.contact-panel h2{font-size:clamp(36px,4.6vw,60px);line-height:1.02;letter-spacing:-.07em;margin:15px 0}.contact-panel h2 em{font-family:var(--serif);color:var(--deep);font-weight:500}.contact-panel p{font-size:12px;line-height:1.8;color:#456579;max-width:440px;margin:0}.contact-actions{display:flex;flex-direction:column;gap:12px;min-width:190px}.btn-white{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:15px 18px;border-radius:40px;background:white;color:var(--deep);font-size:11px;font-weight:800;box-shadow:0 8px 25px #1763a61b;transition:transform .2s}.btn-white:hover{transform:translateY(-3px)}.contact-note{text-align:center;font:9px var(--mono);letter-spacing:.1em;color:#4e738b}
+footer{background:#f0f9fd;border-top:1px solid var(--line);padding:35px 0 22px}.footer-main{display:flex;justify-content:space-between;gap:25px;align-items:center;padding-bottom:28px;border-bottom:1px solid var(--line)}.footer-links{display:flex;gap:23px;flex-wrap:wrap;font-size:11px;font-weight:700}.footer-bottom{display:flex;justify-content:space-between;gap:20px;padding-top:19px;font:9px var(--mono);color:#708b9c;letter-spacing:.06em;text-transform:uppercase}.floating-wa{position:fixed;right:20px;bottom:20px;z-index:40;display:flex;align-items:center;gap:9px;background:#16a88f;color:white;padding:14px 18px;border-radius:40px;font-size:11px;font-weight:800;box-shadow:0 12px 30px #0a7e6c40;transition:transform .25s}.floating-wa:hover{transform:translateY(-4px)}
+.reveal{opacity:1;transform:none;transition:opacity .75s ease,transform .75s cubic-bezier(.2,.7,.2,1)}.js-ready .reveal{opacity:0;transform:translateY(25px)}.js-ready .reveal.visible{opacity:1;transform:translateY(0)}@keyframes zoomIn{from{transform:scale(1.08);opacity:.6}to{transform:scale(1);opacity:1}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}.chip-top{animation:float 5s ease-in-out infinite}.chip-bottom{animation:float 5s ease-in-out 1.5s infinite}
+
+.gallery-filters{display:flex;gap:9px;flex-wrap:wrap;margin:-12px 0 28px;position:relative;z-index:2}
+.gallery-filter{border:1px solid #42678380;background:transparent;color:#d7eaf5;border-radius:30px;padding:11px 15px;font:10px var(--mono);transition:background .2s,color .2s,border-color .2s}
+.gallery-filter:hover,.gallery-filter.active{background:var(--tiffany);border-color:var(--tiffany);color:var(--navy)}
+.interactive-gallery{grid-template-columns:repeat(4,minmax(0,1fr))}
+.gallery-card.gallery-open{padding:0;border:0;text-align:left;color:white;cursor:pointer;display:block;width:100%;font:inherit;transition:transform .3s,opacity .3s}
+.gallery-card.gallery-open:hover{transform:translateY(-5px)}
+.gallery-card.gallery-open img{height:270px}
+.gallery-card.gallery-open .gallery-meta{background:#164569}
+.gallery-card.is-hidden{display:none}
+.gallery-source-note{font:9px var(--mono);color:#a9c3d3;margin:22px 0 0;letter-spacing:.04em}
+.gallery-lightbox{display:none;position:fixed;inset:0;z-index:100;background:rgba(3,20,35,.94);align-items:center;justify-content:center;padding:50px 70px}
+.gallery-lightbox.open{display:flex}
+.gallery-lightbox figure{margin:0;max-width:min(1100px,88vw);max-height:85vh;text-align:center}
+.gallery-lightbox img{display:block;max-width:100%;max-height:75vh;object-fit:contain;border-radius:12px;box-shadow:0 20px 70px #0005}
+.gallery-lightbox figcaption{color:white;font:11px var(--mono);letter-spacing:.08em;margin-top:15px}
+.lightbox-close,.lightbox-prev,.lightbox-next{position:absolute;border:1px solid #ffffff55;background:#ffffff12;color:white;border-radius:50%;width:44px;height:44px;display:grid;place-items:center;font-size:26px;line-height:1}
+.lightbox-close{right:25px;top:22px}.lightbox-prev{left:20px;top:50%;transform:translateY(-50%)}.lightbox-next{right:20px;top:50%;transform:translateY(-50%)}
+body.lightbox-open{overflow:hidden}
+@media(max-width:980px){.interactive-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery-card.gallery-open img{height:300px}}
+@media(max-width:740px){.gallery-filters{gap:7px;margin-top:0}.gallery-filter{font-size:9px;padding:10px 12px}.interactive-gallery{grid-template-columns:1fr 1fr}.gallery-card.gallery-open img{height:230px}.gallery-lightbox{padding:45px 18px}.lightbox-prev{left:8px}.lightbox-next{right:8px}.lightbox-close{right:12px;top:12px}}
+@media(max-width:400px){.interactive-gallery{grid-template-columns:1fr}.gallery-card.gallery-open img{height:260px}}
+
+@media(max-width:980px){.wrap{width:calc(100% - 42px)}.nav{gap:14px}.nav a{font-size:10px}.brand{min-width:165px}.nav-cta{padding:12px}.hero-grid{gap:15px}.hero-visual{height:520px}.hero h1{font-size:clamp(48px,6.5vw,72px)}.trust-item{font-size:9px;padding:18px 8px}.about-grid{gap:45px}.about-image{height:480px}.service-card{padding:20px}.service-card h3{font-size:18px}.contact-panel{padding:50px 5%}}
+@media(max-width:740px){.wrap{width:calc(100% - 36px)}.topline{font-size:8px;text-align:center;padding:0 10px}.navrow{height:70px}.brand{min-width:0}.brandmark{width:35px;height:35px}.nav{display:none;position:absolute;top:70px;left:0;right:0;padding:14px 22px 22px;background:rgba(250,253,255,.98);border-bottom:1px solid var(--line);box-shadow:0 15px 25px #09253b0d;align-items:stretch;gap:0}.nav.open{display:flex;flex-direction:column}.nav a{padding:15px 3px;border-bottom:1px solid var(--line);font-size:12px}.nav a:last-child{border:0}.menu-btn{display:block}.nav-cta{display:none}.nav-actions{gap:7px}.hero{padding:35px 0 45px}.hero-grid{grid-template-columns:1fr;gap:12px}.hero-copy{padding:20px 0 0}.hero h1{font-size:clamp(54px,12.8vw,86px)}.hero-desc{font-size:13px}.hero-proof{margin-top:28px}.hero-visual{height:440px;margin-top:5px}.hero-main-photo{inset:0 8% 22px 8%;border-radius:42% 42% 20px 20px}.chip-top{top:25px;right:0}.chip-bottom{bottom:40px;left:0}.visual-chip{padding:10px 12px}.chip-icon{width:29px;height:29px}.orbit{width:88px;height:88px;font-size:8px;right:0;bottom:7px}.hero-photo-label{bottom:47px;left:14%;font-size:8px}.hero-scroll{display:none}.trust-inner{grid-template-columns:1fr 1fr}.trust-item{justify-content:flex-start;padding:16px 10px;border-bottom:1px solid var(--line)}.trust-item:nth-child(2){border-right:0}.trust-item:nth-child(3),.trust-item:nth-child(4){border-bottom:0}.page-section{padding:75px 0}.section-heading{display:block;margin-bottom:30px}.section-heading h2{font-size:44px}.section-heading p{margin-top:17px;max-width:500px}.service-grid{grid-template-columns:1fr 1fr;gap:10px}.service-card{min-height:235px;padding:17px;border-radius:16px}.service-icon{width:38px;height:38px;border-radius:12px}.service-card h3{font-size:17px}.service-card p{font-size:10px}.service-more{right:15px;bottom:13px}.about-grid{grid-template-columns:1fr;gap:38px}.about-image{height:400px;order:2;margin-right:10px}.about-copy{order:1}.about-copy h2{font-size:48px}.gallery-grid{grid-template-columns:1fr 1fr;gap:11px}.gallery-card:nth-child(2){margin-top:35px}.gallery-card:nth-child(3){display:none}.gallery-card img{height:280px}.gallery-card:nth-child(2) img{height:245px}.gallery-meta{padding:12px;font-size:9px}.steps-grid{grid-template-columns:1fr;gap:23px}.step{padding-top:18px}.step h3{margin:15px 0 8px}.contact-section{padding:75px 0}.contact-panel{padding:36px 25px;display:block;border-radius:23px}.contact-panel h2{font-size:46px}.contact-actions{margin-top:25px;align-items:stretch;max-width:280px}.footer-main,.footer-bottom{align-items:flex-start;flex-direction:column}.footer-links{gap:16px}.floating-wa{right:13px;bottom:13px;padding:13px 15px}}
+@media(max-width:400px){.brandtext{font-size:9px}.brandtext span{font-size:7px}.lang{font-size:9px;padding:9px}.hero h1{font-size:53px}.hero-visual{height:380px}.visual-chip strong{font-size:10px}.visual-chip small{font-size:8px}.service-grid{grid-template-columns:1fr}.service-card{min-height:205px}.service-card h3{font-size:20px;margin-top:28px}.about-image{height:330px}.gallery-card img{height:225px}.gallery-card:nth-child(2) img{height:190px}.contact-panel h2{font-size:39px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+
+/* HOME-FIRST NAVIGATION: una schermata alla volta, niente lunga pagina da scorrere */
+html{scroll-behavior:auto}
+body.js-ready:not([data-view="home"]) #home,
+body.js-ready:not([data-view="home"]) .trustbar,
+body.js-ready:not([data-view="servizi"]) #servizi,
+body.js-ready:not([data-view="chi-siamo"]) #chi-siamo,
+body.js-ready:not([data-view="esperienze"]) #esperienze,
+body.js-ready:not([data-view="come-funziona"]) #come-funziona,
+body:not([data-view="contatti"]) #contatti{display:none!important}
+body[data-view="home"] #home,
+body[data-view="home"] .trustbar,
+body[data-view="servizi"] #servizi,
+body[data-view="chi-siamo"] #chi-siamo,
+body[data-view="esperienze"] #esperienze,
+body[data-view="come-funziona"] #come-funziona,
+body[data-view="contatti"] #contatti{display:block}
+body[data-view="home"] .trustbar{display:block}
+body[data-view="home"] #home{display:block}
+#home,#servizi,#chi-siamo,#esperienze,#come-funziona,#contatti{min-height:calc(100vh - 140px)}
+.header{z-index:100}
+.navrow{position:relative}
+.menu-btn{position:relative;z-index:102;display:flex;align-items:center;gap:10px;border:1px solid #cfe5ef;background:white;border-radius:30px;padding:12px 15px;min-height:44px;box-shadow:0 6px 20px #09253b08;transition:background .2s,transform .2s}
+.menu-btn:hover{background:#eaf9fb;transform:translateY(-1px)}
+.menu-icon{font-size:19px;line-height:1;width:18px;text-align:center}
+.menu-label{font:10px var(--mono);letter-spacing:.13em}
+.nav{display:flex;visibility:hidden;opacity:0;pointer-events:none;position:fixed;top:0;right:0;height:100dvh;width:min(410px,88vw);padding:120px 34px 36px;background:linear-gradient(155deg,#faffff 0%,#effaff 55%,#e2f7f7 100%);box-shadow:-25px 0 70px #09253b24;z-index:99;flex-direction:column;align-items:stretch;gap:0;transform:translateX(105%);transition:transform .32s cubic-bezier(.2,.7,.2,1),opacity .25s,visibility .25s;overflow-y:auto}
+.nav.open{visibility:visible;opacity:1;pointer-events:auto;transform:translateX(0)}
+.nav:before{content:"VERSILIA / MENU";position:absolute;top:83px;left:34px;font:10px var(--mono);letter-spacing:.18em;color:var(--deep)}
+.nav a{display:flex;align-items:center;justify-content:space-between;font-size:20px;padding:18px 0;border-bottom:1px solid #0b4b7018;color:var(--ink)}
+.nav a:after{content:"↗";position:static;width:auto;height:auto;background:none;font-size:18px;color:var(--deep);opacity:.5}
+.nav a.active{color:var(--deep)}
+.nav a.active:after{opacity:1}
+body.menu-open:after{content:"";position:fixed;inset:0;background:rgba(5,32,53,.34);backdrop-filter:blur(3px);z-index:90}
+.nav-actions{margin-left:auto}
+.nav-cta{display:inline-flex}
+main{min-height:calc(100vh - 180px)}
+footer{position:relative}
+.reveal{transition:opacity .55s ease,transform .55s ease}
+section[tabindex="-1"]{outline:none}
+@media(max-width:740px){
+ .nav{top:0;left:auto;right:0;width:min(390px,88vw);height:100dvh;padding:120px 28px 32px}
+ .nav:before{left:28px}
+ .nav a{font-size:19px;padding:17px 0}
+ .nav-cta{display:none}
+ .nav-actions{gap:8px}
+ .menu-btn{padding:11px 13px}
+ #home,#servizi,#chi-siamo,#esperienze,#come-funziona,#contatti{min-height:calc(100vh - 120px)}
+}
+@media(prefers-reduced-motion:reduce){.nav{transition:none}.menu-btn{transition:none}}
+
+
+/* Mobile hardening: iOS Safari, Android Chrome and narrow embedded previews */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;overflow-x:clip}
+body{min-width:0;width:100%;overflow-x:clip}
+img{max-width:100%}
+button,a{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.header{-webkit-backdrop-filter:blur(18px)}
+.hero-main-photo img,.about-image img,.gallery-card img{display:block}
+.gallery-lightbox{min-height:100vh;min-height:100dvh}
+.gallery-lightbox figure{width:100%;max-width:100%;display:flex;flex-direction:column;align-items:center}
+.gallery-lightbox img{width:auto;height:auto;max-width:100%;max-height:calc(100vh - 150px);max-height:calc(100dvh - 150px)}
+@supports(padding:max(0px)){
+  .header{padding-top:env(safe-area-inset-top,0px)}
+  .floating-wa{bottom:max(13px,env(safe-area-inset-bottom,13px))}
+  .gallery-lightbox{padding-top:max(45px,env(safe-area-inset-top,45px));padding-bottom:max(30px,env(safe-area-inset-bottom,30px))}
+}
+@media(max-width:740px){
+  .topline{min-height:31px;height:auto;line-height:1.45;padding:7px 12px;letter-spacing:.09em}
+  .navrow{height:auto;min-height:68px;padding:8px 0;gap:8px}
+  .brand{flex:1;min-width:0;gap:8px}
+  .brandtext{font-size:9px;letter-spacing:.1em}
+  .brandtext span{font-size:7px;letter-spacing:.13em}
+  .nav-actions{flex-shrink:0;gap:6px}
+  .lang{min-height:42px;padding:10px 9px}
+  .menu-btn{display:flex;min-height:42px;align-items:center;justify-content:center;gap:7px;padding:10px 11px}
+  .menu-label{font-size:9px}
+  .hero{padding:25px 0 38px}
+  .hero h1{font-size:clamp(43px,12vw,68px);overflow-wrap:break-word}
+  .hero-desc{font-size:14px;line-height:1.75}
+  .hero-buttons{gap:12px}
+  .btn,.btn-white,.nav-cta{min-height:44px}
+  .hero-visual{height:clamp(310px,105vw,430px);width:100%;min-width:0}
+  .visual-chip{max-width:72%;gap:7px}
+  .chip-top{right:0}
+  .chip-bottom{left:0}
+  .orbit{width:76px;height:76px}
+  .hero-photo-label{max-width:65%;line-height:1.5}
+  .trust-item{font-size:10px;line-height:1.4}
+  .page-section{padding:58px 0}
+  .section-heading h2{font-size:clamp(34px,9.5vw,45px)}
+  .section-heading p{font-size:13px;line-height:1.75}
+  .service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .service-card{min-width:0;min-height:225px;padding:15px}
+  .service-card h3{font-size:clamp(15px,4.4vw,18px);overflow-wrap:anywhere}
+  .service-card p{font-size:11px;line-height:1.7}
+  .about-grid{gap:28px}
+  .about-copy h2{font-size:clamp(38px,10vw,49px)}
+  .about-copy p{font-size:13px}
+  .about-image{height:clamp(280px,90vw,390px);margin-right:8px}
+  .feature-list{gap:12px}
+  .feature{font-size:10px;line-height:1.45}
+  .gallery-filters{display:flex;flex-wrap:wrap}
+  .gallery-filter{min-height:38px}
+  .interactive-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .gallery-card{min-width:0}
+  .gallery-card.gallery-open img{width:100%;height:clamp(150px,52vw,230px);object-fit:cover}
+  .gallery-card:nth-child(3){display:block}
+  .gallery-meta{font-size:9px;line-height:1.5}
+  .steps-grid{gap:20px}
+  .contact-panel h2{font-size:clamp(36px,10vw,48px)}
+  .contact-actions{width:100%;max-width:none}
+  .contact-actions .btn,.contact-actions .btn-white{width:100%;justify-content:space-between}
+  .footer-links{flex-wrap:wrap;row-gap:12px}
+  .floating-wa{max-width:calc(100vw - 26px);font-size:11px}
+}
+@media(max-width:390px){
+  .wrap{width:calc(100% - 28px)}
+  .brandmark{width:31px;height:31px;border-radius:10px;font-size:20px}
+  .brandtext{font-size:8px}
+  .brandtext span{font-size:6px}
+  .lang{font-size:9px;padding:9px 7px}
+  .menu-btn{padding:9px}
+  .menu-label{display:none}
+  .hero h1{font-size:clamp(39px,11.4vw,48px)}
+  .hero-visual{height:310px}
+  .service-grid{grid-template-columns:1fr}
+  .service-card{min-height:195px;padding:18px}
+  .service-card h3{font-size:20px}
+  .interactive-gallery{grid-template-columns:1fr}
+  .gallery-card.gallery-open img{height:230px}
+  .feature-list{grid-template-columns:1fr}
+  .gallery-lightbox{padding-left:12px;padding-right:12px}
+  .lightbox-prev,.lightbox-next{width:38px;height:38px;font-size:23px}
+}
+@media(hover:none){
+  .service-card:hover{transform:none;box-shadow:none}
+  .btn:hover,.nav-cta:hover{transform:none}
+}
+
+
+/* Fallback visivo quando un sito esterno non consente di caricare una foto */
+img{background:linear-gradient(135deg,#e5f8f6,#d9efff)}
+img.image-failed{visibility:hidden}
+
+</style>
+</head>
+<body>
+<div class="topline" data-i18n="topline">VERSILIA · TOSCANA · IL TUO PROSSIMO RICORDO INIZIA QUI</div>
+<header class="header"><div class="wrap navrow">
+<a class="brand" href="#home" aria-label="Versilia Summer Events home"><span class="brandmark">V.</span><span class="brandtext">VERSILIA SUMMER<span>EVENTS · LIFESTYLE · CONCIERGE</span></span></a>
+<nav class="nav" id="nav" aria-label="Menu principale"><a href="#home" data-i18n="navHome">Home</a><a href="#servizi" data-i18n="navServices">Servizi</a><a href="#chi-siamo" data-i18n="navAbout">Chi siamo</a><a href="#esperienze" data-i18n="navExperiences">Esperienze</a><a href="#come-funziona" data-i18n="navHow">Come funziona</a><a href="#contatti" data-i18n="navContact">Contatti</a></nav>
+<div class="nav-actions"><button class="lang" id="langBtn" aria-label="Cambia lingua">EN / IT</button><a class="nav-cta" href="https://wa.me/393792169581?text=Ciao%21+Vorrei+informazioni+su+Versilia+Summer+Events" target="_blank" rel="noopener" data-i18n="navCta">Parliamone ↗</a><button class="menu-btn" id="menuBtn" aria-label="Apri menu" aria-expanded="false" aria-controls="nav"><span class="menu-icon" aria-hidden="true">☰</span><span class="menu-label">MENU</span></button></div>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div class="hero-copy reveal"><div class="eyebrow eyebrow-pill"><span class="pulse"></span><span data-i18n="heroEyebrow">Il tuo lifestyle partner in Versilia</span></div>
+<h1 data-i18n-html="heroTitle">La Versilia,<br>nel suo <span class="gradient">blu migliore.</span></h1>
+<p class="hero-desc" data-i18n="heroDesc">Dal mare alle notti più speciali: scopri esperienze, locali e occasioni da vivere. Un unico contatto per orientarti e organizzare la tua prossima esperienza in Versilia.</p>
+<div class="hero-buttons"><a class="btn" href="#servizi"><span data-i18n="heroCta">Esplora i servizi</span><span>↗</span></a><a class="btn-light" href="#chi-siamo"><span data-i18n="heroLink">Scopri chi siamo</span><span>↓</span></a></div>
+<div class="hero-proof"><span class="proof-dots"><i></i><i></i><i></i></span><span data-i18n="heroProof">Un contatto diretto · Esperienze su richiesta</span></div></div>
+<div class="hero-visual reveal"><div class="hero-main-photo"><img src="https://www.datocms-assets.com/126792/1730230835-cabine-e-monti-federico-neri_2_web.jpg?auto=format%2Ccompress&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.61&h=750&w=1600" alt="Mare turchese e spiaggia mediterranea" fetchpriority="high"></div>
+<div class="visual-chip chip-top"><span class="chip-icon">✳</span><span><strong data-i18n="chip1Title">Coastal lifestyle</strong><small data-i18n="chip1Desc">La bellezza della costa</small></span></div>
+<div class="visual-chip chip-bottom"><span class="chip-icon">↗</span><span><strong data-i18n="chip2Title">Your next experience</strong><small data-i18n="chip2Desc">Comincia da qui</small></span></div>
+<div class="hero-photo-label">FORTE DEI MARMI · VERSILIA</div><div class="orbit">SEA · STYLE<br>SUMMER NIGHTS<br>✳ ITALY</div></div>
+</div></section>
+<div class="trustbar"><div class="wrap trust-inner"><div class="trust-item"><span class="trust-icon">✳</span><span data-i18n="trust1">Tavoli VIP</span></div><div class="trust-item"><span class="trust-icon">◈</span><span data-i18n="trust2">Eventi privati</span></div><div class="trust-item"><span class="trust-icon">〰</span><span data-i18n="trust3">Dining experience</span></div><div class="trust-item"><span class="trust-icon">✧</span><span data-i18n="trust4">Concierge</span></div></div></div>
+<section class="page-section services" id="servizi"><div class="wrap">
+<div class="section-heading reveal"><div><div class="eyebrow" data-i18n="servicesEyebrow">Il nostro mondo</div><h2 data-i18n-html="servicesTitle">Tutto quello che cerchi.<br><em>In un solo posto.</em></h2></div><p data-i18n="servicesDesc">Dai tavoli VIP agli eventi privati, fino ai consigli per vivere la costa: scopri i servizi e contattaci per conoscere le possibilità disponibili.</p></div>
+<div class="service-grid">
+<article class="service-card reveal"><div class="service-top"><span class="service-num">01 / VIP</span><span class="service-icon">✦</span></div><h3 data-i18n="s1Title">Tavoli VIP</h3><p data-i18n="s1Desc">Richiedi informazioni per prenotare un tavolo nei locali della Versilia e rendere speciale la tua serata.</p><span class="service-more">↗</span></article>
+<article class="service-card reveal"><div class="service-top"><span class="service-num">02 / PRIVATE</span><span class="service-icon">◇</span></div><h3 data-i18n="s2Title">Eventi privati</h3><p data-i18n="s2Desc">Occasioni da celebrare, momenti speciali e idee da trasformare in un'esperienza su misura.</p><span class="service-more">↗</span></article>
+<article class="service-card reveal"><div class="service-top"><span class="service-num">03 / DINING</span><span class="service-icon">♧</span></div><h3 data-i18n="s3Title">Pranzi e cene spettacolo</h3><p data-i18n="s3Desc">Scopri le proposte disponibili per vivere una cena speciale tra gusto, atmosfera e intrattenimento.</p><span class="service-more">↗</span></article>
+<article class="service-card reveal"><div class="service-top"><span class="service-num">04 / CONCIERGE</span><span class="service-icon">✧</span></div><h3 data-i18n="s4Title">Luxury concierge H24</h3><p data-i18n="s4Desc">Un contatto per orientarti tra luoghi, servizi ed esperienze in base ai tuoi programmi.</p><span class="service-more">↗</span></article>
+<article class="service-card reveal"><div class="service-top"><span class="service-num">05 / ASSISTANCE</span><span class="service-icon">◎</span></div><h3 data-i18n="s5Title">Assistenza dedicata</h3><p data-i18n="s5Desc">Un dialogo diretto per richieste, informazioni e supporto mentre organizzi la tua esperienza.</p><span class="service-more">↗</span></article>
+<article class="service-card reveal"><div class="service-top"><span class="service-num">06 / LOCAL GUIDE</span><span class="service-icon">⌖</span></div><h3 data-i18n="s6Title">Local tips</h3><p data-i18n="s6Desc">Raccontaci che tipo di vacanza o serata immagini e chiedici quali opzioni fanno al caso tuo.</p><span class="service-more">↗</span></article>
+</div></div></section>
+<section class="page-section" id="chi-siamo"><div class="wrap about-grid">
+<div class="about-image reveal"><img src="https://www.firenzemadeintuscany.com/assets/w%3D1040__images.ctfassets.net_7dc7gq8ix1ml_4F7VZ2Lwn2EcxBKV39nrKU_7aa1c9ba422b5781ef283664026bc75f_DJI_0142.jpg" alt="Onde blu e luce del sole sul mare" loading="lazy"><div class="image-caption">43°57′ N — 10°10′ E · TUSCANY</div></div>
+<div class="about-copy reveal"><div class="eyebrow" data-i18n="aboutEyebrow">Piacere, Versilia</div><h2 data-i18n-html="aboutTitle">Non solo una meta.<br><em>Una sensazione.</em></h2><p data-i18n="aboutP1">La Versilia è una destinazione che cambia ritmo durante la giornata: luce sul mare, tavole da scoprire, locali iconici e notti da ricordare.</p><p data-i18n="aboutP2">Versilia Summer Events nasce per aiutarti a trovare la tua dimensione, con un contatto diretto per richieste, informazioni e organizzazione di esperienze su richiesta.</p><div class="feature-list"><div class="feature"><span class="check">✓</span><span data-i18n="feature1">Contatto diretto</span></div><div class="feature"><span class="check">✓</span><span data-i18n="feature2">Proposte su richiesta</span></div><div class="feature"><span class="check">✓</span><span data-i18n="feature3">Focus sulla Versilia</span></div><div class="feature"><span class="check">✓</span><span data-i18n="feature4">Supporto personalizzato</span></div></div><a class="btn" href="https://wa.me/393792169581?text=Ciao%21+Vorrei+informazioni+su+Versilia+Summer+Events" target="_blank" rel="noopener"><span data-i18n="aboutCta">Conosciamoci</span><span>↗</span></a></div>
+</div></section>
+<section class="page-section gallery-section" id="esperienze"><div class="wrap">
+<div class="section-heading reveal"><div><div class="eyebrow" data-i18n="galleryEyebrow">Moodboard · Forte dei Marmi</div><h2 data-i18n-html="galleryTitle">Luoghi veri.<br><em>Atmosfere del Forte.</em></h2></div><p data-i18n="galleryDesc">Dai bagni al pontile, dal centro alle notti in Versilia: esplora alcuni dei luoghi che rendono speciale Forte dei Marmi.</p></div>
+<div class="gallery-filters" role="group" aria-label="Filtra le fotografie">
+<button class="gallery-filter active" type="button" data-filter="all" data-i18n="filterAll">Tutti i luoghi</button>
+<button class="gallery-filter" type="button" data-filter="beach" data-i18n="filterBeach">Bagni</button>
+<button class="gallery-filter" type="button" data-filter="promenade" data-i18n="filterPromenade">Lungomare e pontile</button>
+<button class="gallery-filter" type="button" data-filter="town" data-i18n="filterTown">Centro</button>
+<button class="gallery-filter" type="button" data-filter="nightlife" data-i18n="filterNightlife">Nightlife</button>
+</div>
+<div class="gallery-grid interactive-gallery">
+<button class="gallery-card reveal gallery-open" type="button" data-category="beach" data-image="https://www.bagnolafenice.com/Foto/slide_spiaggia_01.jpg" data-title-it="I bagni di Forte dei Marmi" data-title-en="Forte dei Marmi beach clubs"><img src="https://www.bagnolafenice.com/Foto/slide_spiaggia_01.jpg" alt="Stabilimento balneare a Forte dei Marmi, file di tende sulla spiaggia" loading="lazy"><span class="gallery-meta"><span data-i18n="g1">01 — Bagni e spiaggia</span><span>ZOOM ↗</span></span></button>
+<button class="gallery-card reveal gallery-open" type="button" data-category="promenade" data-image="https://www.firenzemadeintuscany.com/assets/w%3D1040__images.ctfassets.net_7dc7gq8ix1ml_4F7VZ2Lwn2EcxBKV39nrKU_7aa1c9ba422b5781ef283664026bc75f_DJI_0142.jpg" data-title-it="Il pontile di Forte dei Marmi" data-title-en="Forte dei Marmi pier"><img src="https://www.firenzemadeintuscany.com/assets/w%3D1040__images.ctfassets.net_7dc7gq8ix1ml_4F7VZ2Lwn2EcxBKV39nrKU_7aa1c9ba422b5781ef283664026bc75f_DJI_0142.jpg" alt="Vista dall'alto del pontile di Forte dei Marmi e della costa" loading="lazy"><span class="gallery-meta"><span data-i18n="g2">02 — Pontile e lungomare</span><span>ZOOM ↗</span></span></button>
+<button class="gallery-card reveal gallery-open" type="button" data-category="town" data-image="https://www.datocms-assets.com/126792/1730789692-img_4458_web.jpg?auto=format%2Ccompress&fit=max" data-title-it="Piazza Garibaldi e il Fortino" data-title-en="Piazza Garibaldi and the Fortino"><img src="https://www.datocms-assets.com/126792/1730789692-img_4458_web.jpg?auto=format%2Ccompress&fit=max" alt="Piazza Garibaldi e lo storico Fortino di Forte dei Marmi" loading="lazy"><span class="gallery-meta"><span data-i18n="g3">03 — Centro e Fortino</span><span>ZOOM ↗</span></span></button>
+<button class="gallery-card reveal gallery-open" type="button" data-category="nightlife" data-image="https://www.datocms-assets.com/126792/1730923377-sny5968_bar-e-locali_web.jpg?auto=format%2Ccompress&fit=crop&h=750&w=1600" data-title-it="Aperitivi e nightlife in Versilia" data-title-en="Aperitifs and nightlife in Versilia"><img src="https://www.datocms-assets.com/126792/1730923377-sny5968_bar-e-locali_web.jpg?auto=format%2Ccompress&fit=crop&h=750&w=1600" alt="Cocktail e atmosfera dei locali di Forte dei Marmi" loading="lazy"><span class="gallery-meta"><span data-i18n="g4">04 — Locali e nightlife</span><span>ZOOM ↗</span></span></button>
+</div>
+<p class="gallery-source-note" data-i18n="galleryNote">Fotografie di luoghi reali della zona. Se un'immagine non si carica, il sito resta navigabile.</p>
+<div class="gallery-lightbox" id="galleryLightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Anteprima fotografia"><button type="button" class="lightbox-close" id="lightboxClose" aria-label="Chiudi anteprima">×</button><button type="button" class="lightbox-prev" id="lightboxPrev" aria-label="Foto precedente">‹</button><figure><img id="lightboxImage" src="" alt=""><figcaption id="lightboxCaption"></figcaption></figure><button type="button" class="lightbox-next" id="lightboxNext" aria-label="Foto successiva">›</button></div>
+</div></section>
+<section class="page-section steps" id="come-funziona"><div class="wrap"><div class="section-heading reveal"><div><div class="eyebrow" data-i18n="stepsEyebrow">Semplice, come dovrebbe essere</div><h2 data-i18n-html="stepsTitle">La tua esperienza,<br><em>in tre passaggi.</em></h2></div><p data-i18n="stepsDesc">Hai un'idea? Partiamo da lì. Contattaci e raccontaci cosa vorresti vivere in Versilia.</p></div>
+<div class="steps-grid"><article class="step reveal"><span class="step-number">01 / RACCONTACI</span><h3 data-i18n="step1Title">Dicci cosa immagini</h3><p data-i18n="step1Desc">Scrivici su WhatsApp con la tua richiesta, la data e il tipo di esperienza che cerchi.</p></article><article class="step reveal"><span class="step-number">02 / VALUTIAMO</span><h3 data-i18n="step2Title">Esploriamo le opzioni</h3><p data-i18n="step2Desc">Ti aiutiamo a capire quali possibilità sono disponibili in base alle tue esigenze.</p></article><article class="step reveal"><span class="step-number">03 / SI PARTE</span><h3 data-i18n="step3Title">Organizza il tuo momento</h3><p data-i18n="step3Desc">Ricevi le informazioni necessarie e definisci i dettagli della tua esperienza.</p></article></div></div></section>
+<section class="contact-section" id="contatti"><div class="wrap"><div class="contact-panel reveal"><div><div class="eyebrow" data-i18n="contactEyebrow">Il prossimo ricordo ti aspetta</div><h2 data-i18n-html="contactTitle">Facciamo spazio<br>alla <em>tua estate.</em></h2><p data-i18n="contactDesc">Tavoli VIP, eventi privati o un consiglio per vivere la Versilia. Scrivici direttamente e raccontaci cosa hai in mente.</p></div><div class="contact-actions"><a class="btn" href="https://wa.me/393792169581?text=Ciao%21+Vorrei+informazioni+su+Versilia+Summer+Events" target="_blank" rel="noopener"><span data-i18n="contactWhatsApp">Contattaci su WhatsApp</span><span>↗</span></a><a class="btn-white" href="https://www.instagram.com/versiliasummerevents/" target="_blank" rel="noopener"><span data-i18n="contactInstagram">Seguici su Instagram</span><span>↗</span></a><div class="contact-note" data-i18n="contactNote">VERSILIA · TOSCANA · ITALIA</div></div></div></div></section>
+</main>
+<footer><div class="wrap"><div class="footer-main"><a class="brand" href="#home"><span class="brandmark">V.</span><span class="brandtext">VERSILIA SUMMER<span>EVENTS · LIFESTYLE · CONCIERGE</span></span></a><div class="footer-links"><a href="#servizi" data-i18n="fServices">Servizi</a><a href="#chi-siamo" data-i18n="fAbout">Chi siamo</a><a href="https://www.instagram.com/versiliasummerevents/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://wa.me/393792169581?text=Ciao%21+Vorrei+informazioni+su+Versilia+Summer+Events" target="_blank" rel="noopener">WhatsApp ↗</a></div></div><div class="footer-bottom"><span>© <span id="year"></span> VERSILIA SUMMER EVENTS</span><span>FORTE DEI MARMI · VERSILIA</span><span data-i18n="footerTag">Mare, stile, notti d'estate.</span></div></div></footer>
+<a class="floating-wa" href="https://wa.me/393792169581?text=Ciao%21+Vorrei+informazioni+su+Versilia+Summer+Events" target="_blank" rel="noopener"><span>◉</span><span data-i18n="floatCta">Scrivici su WhatsApp</span><span>↗</span></a>
+<script>
+const T={
+it:{topline:"VERSILIA · TOSCANA · IL TUO PROSSIMO RICORDO INIZIA QUI",navHome:"Home",navServices:"Servizi",navAbout:"Chi siamo",navExperiences:"Esperienze",navHow:"Come funziona",navContact:"Contatti",navCta:"Parliamone ↗",heroEyebrow:"Il tuo lifestyle partner in Versilia",heroTitle:"La Versilia,<br>nel suo <span class=\"gradient\">blu migliore.</span>",heroDesc:"Dal mare alle notti più speciali: scopri esperienze, locali e occasioni da vivere. Un unico contatto per orientarti e organizzare la tua prossima esperienza in Versilia.",heroCta:"Esplora i servizi",heroLink:"Scopri chi siamo",heroProof:"Un contatto diretto · Esperienze su richiesta",chip1Title:"Coastal lifestyle",chip1Desc:"La bellezza della costa",chip2Title:"Your next experience",chip2Desc:"Comincia da qui",trust1:"Tavoli VIP",trust2:"Eventi privati",trust3:"Dining experience",trust4:"Concierge",servicesEyebrow:"Il nostro mondo",servicesTitle:"Tutto quello che cerchi.<br><em>In un solo posto.</em>",servicesDesc:"Dai tavoli VIP agli eventi privati, fino ai consigli per vivere la costa: scopri i servizi e contattaci per conoscere le possibilità disponibili.",s1Title:"Tavoli VIP",s1Desc:"Richiedi informazioni per prenotare un tavolo nei locali della Versilia e rendere speciale la tua serata.",s2Title:"Eventi privati",s2Desc:"Occasioni da celebrare, momenti speciali e idee da trasformare in un'esperienza su misura.",s3Title:"Pranzi e cene spettacolo",s3Desc:"Scopri le proposte disponibili per vivere una cena speciale tra gusto, atmosfera e intrattenimento.",s4Title:"Luxury concierge H24",s4Desc:"Un contatto per orientarti tra luoghi, servizi ed esperienze in base ai tuoi programmi.",s5Title:"Assistenza dedicata",s5Desc:"Un dialogo diretto per richieste, informazioni e supporto mentre organizzi la tua esperienza.",s6Title:"Local tips",s6Desc:"Raccontaci che tipo di vacanza o serata immagini e chiedici quali opzioni fanno al caso tuo.",aboutEyebrow:"Piacere, Versilia",aboutTitle:"Non solo una meta.<br><em>Una sensazione.</em>",aboutP1:"La Versilia è una destinazione che cambia ritmo durante la giornata: luce sul mare, tavole da scoprire, locali iconici e notti da ricordare.",aboutP2:"Versilia Summer Events nasce per aiutarti a trovare la tua dimensione, con un contatto diretto per richieste, informazioni e organizzazione di esperienze su richiesta.",feature1:"Contatto diretto",feature2:"Proposte su richiesta",feature3:"Focus sulla Versilia",feature4:"Supporto personalizzato",aboutCta:"Conosciamoci",galleryEyebrow:"Moodboard · Forte dei Marmi",galleryTitle:"Luoghi veri.<br><em>Atmosfere del Forte.</em>",galleryDesc:"Dai bagni al pontile, dal centro alle notti in Versilia: esplora alcuni dei luoghi che rendono speciale Forte dei Marmi.",filterAll:"Tutti i luoghi",filterBeach:"Bagni",filterPromenade:"Lungomare e pontile",filterTown:"Centro",filterNightlife:"Nightlife",galleryNote:"Fotografie di luoghi reali della zona. Se un'immagine non si carica, il sito resta navigabile.",g1:"01 — Bagni e spiaggia",g2:"02 — Pontile e lungomare",g3:"03 — Centro e Fortino",g4:"04 — Locali e nightlife",stepsEyebrow:"Semplice, come dovrebbe essere",stepsTitle:"La tua esperienza,<br><em>in tre passaggi.</em>",stepsDesc:"Hai un'idea? Partiamo da lì. Contattaci e raccontaci cosa vorresti vivere in Versilia.",step1Title:"Dicci cosa immagini",step1Desc:"Scrivici su WhatsApp con la tua richiesta, la data e il tipo di esperienza che cerchi.",step2Title:"Esploriamo le opzioni",step2Desc:"Ti aiutiamo a capire quali possibilità sono disponibili in base alle tue esigenze.",step3Title:"Organizza il tuo momento",step3Desc:"Ricevi le informazioni necessarie e definisci i dettagli della tua esperienza.",contactEyebrow:"Il prossimo ricordo ti aspetta",contactTitle:"Facciamo spazio<br>alla <em>tua estate.</em>",contactDesc:"Tavoli VIP, eventi privati o un consiglio per vivere la Versilia. Scrivici direttamente e raccontaci cosa hai in mente.",contactWhatsApp:"Contattaci su WhatsApp",contactInstagram:"Seguici su Instagram",contactNote:"VERSILIA · TOSCANA · ITALIA",fServices:"Servizi",fAbout:"Chi siamo",footerTag:"Mare, stile, notti d'estate.",floatCta:"Scrivici su WhatsApp"},
+en:{topline:"VERSILIA · TUSCANY · YOUR NEXT MEMORY STARTS HERE",navHome:"Home",navServices:"Services",navAbout:"About",navExperiences:"Experiences",navHow:"How it works",navContact:"Contact",navCta:"Let's talk ↗",heroEyebrow:"Your lifestyle partner in Versilia",heroTitle:"Versilia,<br>in its <span class=\"gradient\">bluest light.</span>",heroDesc:"From the beach to unforgettable nights: discover experiences, venues and moments worth living. One direct contact to help you explore and plan your next experience in Versilia.",heroCta:"Explore services",heroLink:"Discover our story",heroProof:"Direct contact · Experiences on request",chip1Title:"Coastal lifestyle",chip1Desc:"The beauty of the coast",chip2Title:"Your next experience",chip2Desc:"It starts here",trust1:"VIP tables",trust2:"Private events",trust3:"Dining experiences",trust4:"Concierge",servicesEyebrow:"Our world",servicesTitle:"Everything you're looking for.<br><em>In one place.</em>",servicesDesc:"From VIP tables and private events to tips for exploring the coast: discover our services and contact us to learn about available options.",s1Title:"VIP tables",s1Desc:"Ask about table bookings at Versilia venues and make your evening feel special.",s2Title:"Private events",s2Desc:"Special occasions, celebrations and ideas to shape into a tailored experience.",s3Title:"Dining & show dinners",s3Desc:"Explore available options for a special dinner filled with taste, atmosphere and entertainment.",s4Title:"Luxury concierge H24",s4Desc:"A direct contact to help you explore places, services and experiences around your plans.",s5Title:"Dedicated assistance",s5Desc:"Direct support for questions, information and help while planning your experience.",s6Title:"Local tips",s6Desc:"Tell us what kind of holiday or night out you have in mind and ask which options may suit you.",aboutEyebrow:"Nice to meet you, Versilia",aboutTitle:"More than a destination.<br><em>A feeling.</em>",aboutP1:"Versilia changes its rhythm throughout the day: sunlight on the sea, places to discover, iconic venues and nights to remember.",aboutP2:"Versilia Summer Events is here to help you find your own way to experience the coast, with a direct contact for enquiries, information and tailored experiences on request.",feature1:"Direct contact",feature2:"Options on request",feature3:"Focused on Versilia",feature4:"Personalised support",aboutCta:"Let's connect",galleryEyebrow:"Moodboard · Forte dei Marmi",galleryTitle:"Real places.<br><em>Forte atmosphere.</em>",galleryDesc:"From beach clubs and the pier to the town centre and Versilia nightlife: explore places that make Forte dei Marmi special.",filterAll:"All places",filterBeach:"Beach clubs",filterPromenade:"Seafront & pier",filterTown:"Town centre",filterNightlife:"Nightlife",galleryNote:"Photos of real local places. If an image fails to load, the rest of the site remains available.",g1:"01 — Beach clubs & shore",g2:"02 — Pier & seafront",g3:"03 — Town centre & Fortino",g4:"04 — Venues & nightlife",stepsEyebrow:"Simple, as it should be",stepsTitle:"Your experience,<br><em>in three steps.</em>",stepsDesc:"Have an idea? Let's start there. Get in touch and tell us what you'd like to experience in Versilia.",step1Title:"Tell us what you imagine",step1Desc:"Message us on WhatsApp with your request, date and the kind of experience you're looking for.",step2Title:"Explore the options",step2Desc:"We'll help you understand which possibilities may be available for your needs.",step3Title:"Plan your moment",step3Desc:"Get the information you need and define the details of your experience.",contactEyebrow:"Your next memory is waiting",contactTitle:"Make room for<br><em>your summer.</em>",contactDesc:"VIP tables, private events or a tip for experiencing Versilia. Message us directly and tell us what you have in mind.",contactWhatsApp:"Contact us on WhatsApp",contactInstagram:"Follow us on Instagram",contactNote:"VERSILIA · TUSCANY · ITALY",fServices:"Services",fAbout:"About",footerTag:"Sea, style, summer nights.",floatCta:"Message us on WhatsApp"}
+};
+let lang='it';
+const menuBtn=document.getElementById('menuBtn');
+const nav=document.getElementById('nav');
+const navLinks=[...document.querySelectorAll('#nav a')];
+const viewIds=['home','servizi','chi-siamo','esperienze','come-funziona','contatti'];
+
+function setLang(next){
+  lang=next;
+  document.documentElement.lang=next;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const v=T[next][el.dataset.i18n];
+    if(v!==undefined) el.textContent=v;
+  });
+  document.querySelectorAll('[data-i18n-html]').forEach(el=>{
+    const v=T[next][el.dataset.i18nHtml];
+    if(v!==undefined) el.innerHTML=v;
+  });
+  document.getElementById('langBtn').textContent=next==='it'?'EN / IT':'IT / EN';
+  menuBtn.setAttribute('aria-label',next==='it'?'Apri menu':'Open menu');
+  menuBtn.querySelector('.menu-label').textContent=next==='it'?'MENU':'MENU';
+  const caption=document.getElementById('lightboxCaption');
+  if(lightbox.classList.contains('open')) showPhoto(activePhotoIndex);
+}
+document.getElementById('langBtn').addEventListener('click',()=>setLang(lang==='it'?'en':'it'));
+
+function closeMenu(returnFocus=false){
+  nav.classList.remove('open');
+  document.body.classList.remove('menu-open');
+  menuBtn.setAttribute('aria-expanded','false');
+  menuBtn.querySelector('.menu-icon').textContent='☰';
+  if(returnFocus) menuBtn.focus();
+}
+function toggleMenu(){
+  const opening=!nav.classList.contains('open');
+  nav.classList.toggle('open',opening);
+  document.body.classList.toggle('menu-open',opening);
+  menuBtn.setAttribute('aria-expanded',String(opening));
+  menuBtn.querySelector('.menu-icon').textContent=opening?'×':'☰';
+  if(opening) nav.querySelector('a')?.focus();
+}
+menuBtn.addEventListener('click',toggleMenu);
+
+function showView(id,updateHash=true){
+  if(!viewIds.includes(id)) id='home';
+  document.body.dataset.view=id;
+  navLinks.forEach(a=>{
+    const active=a.getAttribute('href')==='#'+id;
+    a.classList.toggle('active',active);
+    if(active) a.setAttribute('aria-current','page');
+    else a.removeAttribute('aria-current');
+  });
+  closeMenu(false);
+  if(updateHash && location.hash!=='#'+id){
+    try { history.pushState({view:id},'', '#'+id); }
+    catch(err) { try { location.hash=id; } catch(ignore) {} }
+  }
+  try {
+    const reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({top:0,behavior:reduced?'auto':'smooth'});
+  } catch(err) { window.scrollTo(0,0); }
+  const activeSection=document.getElementById(id);
+  if(activeSection) {
+    activeSection.setAttribute('tabindex','-1');
+    setTimeout(()=>{
+      try { activeSection.focus({preventScroll:true}); }
+      catch(err) { try { activeSection.focus(); } catch(ignore) {} }
+    },80);
+  }
+}
+function routeFromLink(link){
+  const href=link.getAttribute('href')||'';
+  if(href.startsWith('#')){
+    const id=href.slice(1);
+    if(viewIds.includes(id)){showView(id);return true;}
+  }
+  return false;
+}
+document.querySelectorAll('a[href^="#"]').forEach(link=>{
+  link.addEventListener('click',e=>{
+    if(routeFromLink(link)) e.preventDefault();
+  });
+});
+window.addEventListener('popstate',()=>showView(location.hash.slice(1)||'home',false));
+window.addEventListener('hashchange',()=>{
+  const id=location.hash.slice(1)||'home';
+  if(viewIds.includes(id) && document.body.dataset.view!==id) showView(id,false);
+});
+document.addEventListener('click',e=>{
+  if(nav.classList.contains('open') && !nav.contains(e.target) && !menuBtn.contains(e.target)) closeMenu(false);
+});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape' && nav.classList.contains('open')) closeMenu(true);
+});
+document.getElementById('year').textContent=new Date().getFullYear();
+document.querySelectorAll('img').forEach(img=>{
+  img.addEventListener('error',()=>{
+    img.classList.add('image-failed');
+    const parent=img.parentElement;
+    if(parent) parent.classList.add('image-unavailable');
+  },{once:true});
+});
+showView(location.hash.slice(1)||'home',false);
+document.body.classList.add('js-ready');
+if('IntersectionObserver' in window){
+  const io=new IntersectionObserver(entries=>entries.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}
+  }),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+}else{
+  document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));
+}
+
+const filterButtons=[...document.querySelectorAll('.gallery-filter')];
+const galleryCards=[...document.querySelectorAll('.gallery-open')];
+filterButtons.forEach(btn=>btn.addEventListener('click',()=>{
+  filterButtons.forEach(b=>b.classList.toggle('active',b===btn));
+  const filter=btn.dataset.filter;
+  galleryCards.forEach(card=>card.classList.toggle('is-hidden',filter!=='all'&&card.dataset.category!==filter));
+}));
+const lightbox=document.getElementById('galleryLightbox');
+const lightboxImage=document.getElementById('lightboxImage');
+const lightboxCaption=document.getElementById('lightboxCaption');
+let activePhotos=[],activePhotoIndex=0;
+function visiblePhotos(){return galleryCards.filter(card=>!card.classList.contains('is-hidden'))}
+function showPhoto(index){activePhotos=visiblePhotos();if(!activePhotos.length)return;activePhotoIndex=(index+activePhotos.length)%activePhotos.length;const card=activePhotos[activePhotoIndex];lightboxImage.src=card.dataset.image;lightboxImage.alt=card.querySelector('img').alt;lightboxCaption.textContent=lang==='it'?card.dataset.titleIt:card.dataset.titleEn}
+function openLightbox(card){activePhotos=visiblePhotos();showPhoto(activePhotos.indexOf(card));lightbox.classList.add('open');lightbox.setAttribute('aria-hidden','false');document.body.classList.add('lightbox-open');document.getElementById('lightboxClose').focus()}
+function closeLightbox(){lightbox.classList.remove('open');lightbox.setAttribute('aria-hidden','true');document.body.classList.remove('lightbox-open')}
+galleryCards.forEach(card=>card.addEventListener('click',()=>openLightbox(card)));
+document.getElementById('lightboxClose').addEventListener('click',closeLightbox);
+document.getElementById('lightboxPrev').addEventListener('click',()=>showPhoto(activePhotoIndex-1));
+document.getElementById('lightboxNext').addEventListener('click',()=>showPhoto(activePhotoIndex+1));
+lightbox.addEventListener('click',e=>{if(e.target===lightbox)closeLightbox()});
+document.addEventListener('keydown',e=>{if(!lightbox.classList.contains('open'))return;if(e.key==='Escape')closeLightbox();if(e.key==='ArrowLeft')showPhoto(activePhotoIndex-1);if(e.key==='ArrowRight')showPhoto(activePhotoIndex+1)});
+
+
+</script>
+</body>
+</html>
